@@ -1,0 +1,16 @@
+function printObjectValues(obj) {
+    const keys = ['street', 'house', 'society'];
+    
+    keys.forEach(key => {
+        const value = obj[key] !== undefined ? obj[key] : '__';
+        console.log(`${key}: ${value}`);
+    });
+}
+
+// Example input object
+const input = {
+    street: 10,
+    society: "Earth Perfect"
+};
+
+printObjectValues(input);
